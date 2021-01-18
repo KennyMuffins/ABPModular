@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.prod.json",
+  "compilerOptions": {
+    "paths": {
+      "@my-company-name/issue-management": [
+        "projects/issue-management/src/public-api.ts"
+      ],
+      "@my-company-name/issue-management/config": [
+        "projects/issue-management/config/src/public-api.ts"
+      ],
+      "@proxy": ["projects/issue-management/src/lib/proxy/index.ts"],
+      "@proxy/*": ["projects/issue-management/src/lib/proxy/*"]
+    }
+  }
+}
